@@ -22,8 +22,7 @@ chmod a+x navicat121_premium_cs_x64/starts
 Install(){
 mv navicat121_premium_cs_x64 /usr/local/navicat
 mv resources/navicat-premium.svg /usr/share/icons/hicolor/scalable/apps
-sudo -i
-cat << EOF > /usr/share/applications/navicat_premium.desktop
+cat << EOF > navicat-premium.desktop
 [Desktop Entry]
 Type=Application
 Name=Navicat Premium
@@ -34,7 +33,7 @@ Categories=Application;Development;
 Terminal=false
 StartupNotify=true
 EOF
-exit
+mv navicat-premium.desktop /usr/share/applications
 }
 
 Install
