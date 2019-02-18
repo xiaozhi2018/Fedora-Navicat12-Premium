@@ -1,5 +1,5 @@
 # Fedora-Navicat12-Premium
-fedora安装Navicat12-Premium脚本
+fedora安装Navicat12-Premium脚本，测试于Fedora-GNOME-29上，理论通用。
 
 ## 如何使用
 
