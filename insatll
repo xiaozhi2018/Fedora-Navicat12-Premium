@@ -19,19 +19,21 @@ EOF
 
 ## 安装配置
 Install(){
-    mv navicat121_premium_cs_x64 /usr/local/navicat
-    mv resources/navicat-premium.svg /usr/share/icons/hicolor/scalable/apps
-    cat << EOF > /usr/share/applications/navicat_premium.desktop
-    [Desktop Entry]
-    Type=Application
-    Name=Navicat Premium
-    Comment=Navicat Premium
-    Icon=/usr/share/icons/hicolor/scalable/apps/navicat-premium.svg
-    Exec=/usr/local/navicat/start
-    Categories=Application;Development;
-    Terminal=false
-    StartupNotify=true
-    EOF
+mv navicat121_premium_cs_x64 /usr/local/navicat
+mv resources/navicat-premium.svg /usr/share/icons/hicolor/scalable/apps
+sudo -i
+cat << EOF > /usr/share/applications/navicat_premium.desktop
+[Desktop Entry]
+Type=Application
+Name=Navicat Premium
+Comment=Navicat Premium
+Icon=/usr/share/icons/hicolor/scalable/apps/navicat-premium.svg
+Exec=/usr/local/navicat/start
+Categories=Application;Development;
+Terminal=false
+StartupNotify=true
+EOF
+exit
 }
 
 Install
