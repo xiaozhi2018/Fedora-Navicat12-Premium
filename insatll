@@ -16,6 +16,7 @@ then
 fi
 ./start_navicat
 EOF
+chmod +x navicat121_premium_cs_x64/starts
 
 ## 安装配置
 Install(){
