@@ -6,7 +6,7 @@ fedora安装Navicat12-Premium脚本
 下载仓库
 
 ```
-git clone https://gitee.com/xuthus5/fedora-netease.git
+git clone https://github.com/xiaozhi2018/Fedora-Navicat12-Premium.git
 ```
 
 加权限运行
